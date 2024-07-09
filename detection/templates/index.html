@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oxanium:wght@700&display=swap"
+        rel="stylesheet">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <div class="logo">
+                    <h1>RIGNOTO AI</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="main-header">
+                <div class="scan">
+                    <h2>
+                        Face Mask Verification
+                    </h2>
+                    <p>
+                        Get the entrance code by verifiying you putting face mask
+                    </p>
+                    <div class="scan-img">
+                       
+                        <img src="{% static 'images/scan-face.png' %}" alt="scan"></div>
+                    <div class="link"><a href="#">Scan my face</a></div>
+                </div>
+
+                <div class="image">
+                    <h2>
+                        Protect Yourself and Communty from Covid-19
+                    </h2>
+                    
+                    <img src="{% static 'images/main-img.png' %}" alt="Face mask detection">
+
+                </div>
+                <div class="det">
+                    <div class="det-img">
+                        <img src="{% static 'images/detected-check.svg' %}" alt="face mask detected">
+                    </div>
+                    <h2>
+                        Face Mask Detected
+                    </h2>
+                    <p>
+                        Your face has been verified successfully by our AI, now below is your entrance access code,
+                        Enjoy!
+                    </p>
+                    <div class="get-access">
+                    <a href="#">Copy Access Code</a>
+                </div>
+                </div>
+            </div>
+        </main>
+    </header>
+
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+/*declare your colours */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Murecho;
+  }
+  
+  header {
+    height: 100vh;
+    width: 100%;
+    background-color: #F1F1F1;
+  }
+  header nav {
+    max-width: 1280px;
+    margin: auto;
+    box-shadow: 0px 4px 15px 0px rgba(55, 132, 251, 0.25);
+  }
+  header nav div.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  header nav div.navigation div.logo h1 {
+    color: #083374;
+    font-family: Oxanium;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 6px;
+  }
+  header nav div.navigation div.menu ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+  header nav div.navigation div.menu ul li a {
+    color: #3784FB;
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  header main {
+    max-width: 1280px;
+    margin: auto;
+  }
+  header main div.main-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+  header main div.main-header div.scan {
+    height: 565px;
+    background-color: #022964;
+    border-radius: 10px;
+    padding: 50px 25px;
+    width: 400px;
+  }
+  header main div.main-header div.scan h2 {
+    color: #FCFDFD;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  header main div.main-header div.scan p {
+    color: #C0BFC1;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+  header main div.main-header div.scan div.scan-img {
+    width: 250px;
+    height: 300px;
+    margin: auto;
+  }
+  header main div.main-header div.scan div.scan-img img {
+    width: 100%;
+    height: 250px;
+  }
+  header main div.main-header div.scan div.link {
+    margin: auto;
+    width: 80%;
+    height: 35px;
+    background-color: #3784FB;
+    padding: 6px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  header main div.main-header div.scan div.link a {
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    color: #FCFDFD;
+    text-decoration: none;
+  }
+  header main div.main-header div.image {
+    background-color: #CFD7E2;
+    height: 565px;
+    border-radius: 10px;
+    padding: 50px 25px;
+    width: 400px;
+    position: relative;
+  }
+  header main div.main-header div.image h2 {
+    color: #022964;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  header main div.main-header div.image img {
+    width: 85%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+  }
+  header main div.main-header div.det {
+    height: 565px;
+    background-color: #022964;
+    border-radius: 10px;
+    padding: 100px 25px;
+    width: 400px;
+  }
+  header main div.main-header div.det div.det-img {
+    width: 150px;
+    height: 100px;
+    margin: auto;
+  }
+  header main div.main-header div.det div.det-img img {
+    width: 100%;
+    height: 100px;
+  }
+  header main div.main-header div.det h2 {
+    text-align: center;
+    color: #FCFDFD;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 25px 0px;
+  }
+  header main div.main-header div.det p {
+    color: #C0BFC1;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  header main div.main-header div.det div.get-access {
+    margin: auto;
+    width: 80%;
+    height: 35px;
+    background-color: #3784FB;
+    padding: 6px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  header main div.main-header div.det div.get-access a {
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    color: #FCFDFD;
+    text-decoration: none;
+  }/*# sourceMappingURL=main.css.map */
