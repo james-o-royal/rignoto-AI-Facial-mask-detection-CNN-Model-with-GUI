@@ -41,26 +41,27 @@
                     </p>
                     <div class="scan-img">
                        
-                        <img src="{% static 'images/scan-face.png' %}" alt="scan"></div>
-                    <div class="link"><a href="#">Scan my face</a></div>
+                        <img src="{% static 'images/scan-face.png' %}" alt="scan">
+                    </div>
+                    <div class="link"><a href="#" id="scan-link">Scan my face</a></div>
                 </div>
 
-                <div class="image">
+                <div class="image" id="image-container">
                     <h2>
                         Protect Yourself and Communty from Covid-19
                     </h2>
                     
-                    <img src="{% static 'images/main-img.png' %}" alt="Face mask detection">
+                    <img src="{% static 'images/main-img.png' %}" alt="Face mask detection" id="uploaded-image">
 
                 </div>
-                <div class="det">
+                <div class="det" id="detection-result">
                     <div class="det-img">
-                        <img src="{% static 'images/detected-check.svg' %}" alt="face mask detected">
+                        <img src="{% static 'images/detected-check.svg' %}" alt="face mask detected" id="detection-image">
                     </div>
-                    <h2>
+                    <h2 id="detection-title">
                         Face Mask Detected
                     </h2>
-                    <p>
+                    <p id="detection-message">
                         Your face has been verified successfully by our AI, now below is your entrance access code,
                         Enjoy!
                     </p>
@@ -72,6 +73,24 @@
         </main>
     </header>
 
+    <!-- Modal for Image Upload and Live Capture -->
+    <div id="uploadModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Select an Option</h2>
+            <button id="uploadImage">Upload Image</button>
+            <button id="captureImage">Capture Image</button>
+            <input type="file" id="fileInput" accept="image/*" style="display:none;">
+            <video id="video" width="640" height="480" autoplay style="display:none;"></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <button id="takePhoto" style="display:none;">Take Photo</button>
+        </div>
+    </div>
+<script src="{% static 'js/main.js' %}"></script>
+
+<script>
+    const staticImageUrl = "{% static 'images/' %}";
+</script>
 
 </body>
 
