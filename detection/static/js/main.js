@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 uploadModal.style.display = 'none';
                 // Send the image to the server for prediction
                 sendImageToServer(file);
-                console.log('img sent');
             };
             reader.readAsDataURL(file);
         }
@@ -117,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             detectionImage.src = staticImageUrl + "detected-not.svg"; // Add an appropriate image for no mask detected
             detectionTitle.textContent = 'No Face Mask Detected';
-            detectionMessage.textContent = 'Please wear a face mask to get the entrance access code.';
+            detectionMessage.textContent = 'Please put on a face mask and verify again to get the entrance access code.';
         }
         detectionResult.style.display = 'block';
     }
